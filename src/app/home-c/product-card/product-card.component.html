@@ -1,16 +1,16 @@
 <div class="col-lg-3 col-md-4 col-sm-6">
   <div class="card-m">
     <div class="card-m-header">
-      <img class="img-card" src="assets/img/card/1.jpg" alt="card 1">
+      <img class="img-card" src="{{product.imageUrl}}" alt="card 1">
       <span class="heart"><i class="fa fa-heart"></i></span>
       <button class="product-more">
         DETAILS
       </button>
     </div>
     <div class="card-m-body text-center mt-1">
-      <p class="collection">COLLECTION: <span class="collection-c">PERFECT COMFORT</span></p>
-      <h5 class="card-product-name">Jodie Night Set</h5>
-      <h6 class="card-product-price">36.99 $</h6>
+      <p class="collection">COLLECTION: <span class="collection-c">{{product.collection}}</span></p>
+      <h5 class="card-product-name">{{product.name}}</h5>
+      <h6 class="card-product-price">{{product.price}} $</h6>
     </div>
   </div>
 </div>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from 'src/_models/product';
+
 
 @Component({
   selector: 'app-home',
@@ -6,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./Home.component.css']
 })
 export class HomeComponent implements OnInit {
+  products: Product[];
 
   constructor() { }
 
