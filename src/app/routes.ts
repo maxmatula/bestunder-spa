@@ -6,6 +6,6 @@ import { ProductDetailsComponent } from './product/product-details/product-detai
 export const appRoutes: Routes = [
 
     {path: '', component: HomeComponent},
-    {path: 'product/details/:id', component: ProductDetailsComponent },
+    {path: 'product/details/:id', component: ProductDetailsComponent},
     {path: '**', component: ErrorComponent}
 ];
