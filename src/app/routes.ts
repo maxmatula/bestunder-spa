@@ -5,6 +5,7 @@ import { ProductDetailsComponent } from './product/product-details/product-detai
 import { TermsComponent } from './static-pages/Terms/Terms.component';
 import { CookiesComponent } from './static-pages/Cookies/Cookies.component';
 import { PrivacyComponent } from './static-pages/Privacy/Privacy.component';
+import { CategoryComponent } from './home-c/category/category.component';
 
 export const appRoutes: Routes = [
 
@@ -12,6 +13,7 @@ export const appRoutes: Routes = [
     {path: 'terms', component: TermsComponent},
     {path: 'cookies', component: CookiesComponent},
     {path: 'privacy', component: PrivacyComponent},
+    {path: 'category/:name', component: CategoryComponent},
     {path: 'product/details/:id', component: ProductDetailsComponent},
     {path: '**', component: ErrorComponent}
 ];

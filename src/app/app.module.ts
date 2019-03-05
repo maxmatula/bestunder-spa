@@ -13,6 +13,7 @@ import { ProductDetailsComponent } from './product/product-details/product-detai
 import { CookiesComponent } from './static-pages/Cookies/Cookies.component';
 import { PrivacyComponent } from './static-pages/Privacy/Privacy.component';
 import { TermsComponent } from './static-pages/Terms/Terms.component';
+import { CategoryComponent } from './home-c/category/category.component';
 
 @NgModule({
    declarations: [
@@ -25,7 +26,8 @@ import { TermsComponent } from './static-pages/Terms/Terms.component';
       ProductDetailsComponent,
       CookiesComponent,
       PrivacyComponent,
-      TermsComponent
+      TermsComponent,
+      CategoryComponent
    ],
    imports: [
       BrowserModule,

@@ -8,7 +8,6 @@ import { Product } from 'src/_models/product';
 })
 export class ProductCardComponent implements OnInit {
   @Input() product: Product;
-  liked = false;
 
   constructor() { }
 
@@ -16,7 +15,7 @@ export class ProductCardComponent implements OnInit {
   }
 
   switchLiked() {
-    this.liked = !this.liked;
+    this.product.liked = !this.product.liked;
   }
 
 }
