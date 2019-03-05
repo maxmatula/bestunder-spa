@@ -8,10 +8,15 @@ import { Product } from 'src/_models/product';
 })
 export class ProductCardComponent implements OnInit {
   @Input() product: Product;
+  liked = false;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  switchLiked() {
+    this.liked = !this.liked;
   }
 
 }

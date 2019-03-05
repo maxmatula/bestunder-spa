@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from 'src/_services/cart.service';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,10 +10,15 @@ import { CartService } from 'src/_services/cart.service';
 
 export class AppComponent implements OnInit {
 
-  constructor(private cartService: CartService) { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
-    this.cartService.getCart();
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+          return;
+      }
+      window.scrollTo(0, 0);
+  });
   }
 
 }

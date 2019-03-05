@@ -125,7 +125,7 @@ body {
     overflow: hidden;
     width: 80%;
     max-width: 80%;
-    height: 550px;
+    height: 540px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.13);
 }
 
@@ -210,21 +210,27 @@ body {
     font-size: 1.3rem;
     color: rgb(255, 255, 255);
     transform: scale(1, 1);
-    transition: ease-in-out 300ms;
+    transition: ease-in-out 100ms;
 }
 
 .heart:hover {
-    transform: scale(1.3, 1.3);
-    color: rgb(255, 177, 210)!important;
-    transition: ease-in-out 300ms;
+    transform: scale(1.2, 1.2);
+    color: rgb(255, 177, 210);
+    transition: ease-in-out 100ms;
     cursor: pointer;
 }
 
+.heart:active {
+    transform: scale(2, 2);
+    color: rgb(250, 19, 115);
+    transition: ease-in-out 100ms;
+}
+
 .liked {
-    transform: scale(1.3, 1.3);
-    color: rgb(255, 177, 210)!important;
+    transform: scale(1.4, 1.4);
+    color: rgb(247, 75, 147)!important;
     cursor: pointer;
-    transition: ease-in-out 300ms;
+    transition: ease-in-out 100ms;
 }
 
 .text-sm {

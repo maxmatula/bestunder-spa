@@ -2,7 +2,8 @@
   <div class="card-m">
     <div class="card-m-header">
       <img class="img-card" src="{{product.imageUrl}}" alt="{{product.description}}">
-      <span class="heart"><i class="fa fa-heart"></i></span>
+      <span class="heart" [ngClass]="{'liked': liked}">
+        <i class="fa fa-heart" (click)="switchLiked()"></i></span>
       <button class="product-more" [routerLink]="['product/details/', product.id]">
         DETAILS
       </button>

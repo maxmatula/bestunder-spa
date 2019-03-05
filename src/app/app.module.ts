@@ -10,6 +10,9 @@ import { NavComponent } from './Nav/Nav.component';
 import { FooterComponent } from './Footer/Footer.component';
 import { ProductCardComponent } from './home-c/product-card/product-card.component';
 import { ProductDetailsComponent } from './product/product-details/product-details.component';
+import { CookiesComponent } from './static-pages/Cookies/Cookies.component';
+import { PrivacyComponent } from './static-pages/Privacy/Privacy.component';
+import { TermsComponent } from './static-pages/Terms/Terms.component';
 
 @NgModule({
    declarations: [
@@ -19,7 +22,10 @@ import { ProductDetailsComponent } from './product/product-details/product-detai
       NavComponent,
       FooterComponent,
       ProductCardComponent,
-      ProductDetailsComponent
+      ProductDetailsComponent,
+      CookiesComponent,
+      PrivacyComponent,
+      TermsComponent
    ],
    imports: [
       BrowserModule,
