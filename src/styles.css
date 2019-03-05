@@ -1,1 +1,351 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../node_modules/font-awesome/css/font-awesome.min.css';
+
+
+
+
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.nav-top {
+    background: rgb(26, 26, 26)!important;
+
+}
+
+.nav-top a {
+    color: rgb(255, 247, 247)!important;
+
+}
+
+.nav-top a:hover {
+    color: rgb(255, 177, 210)!important;
+
+}
+
+.img-fluid {
+    height: 75px;
+    width: auto;
+}
+
+.img-fluid2 {
+    height: 30px;
+    width: auto;
+}
+
+.nav-categories {
+    border-top: 1px solid rgb(209, 209, 209);
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+
+.nav-categories a {
+    color: rgb(26, 26, 26)!important;
+    text-transform: uppercase;
+    transition: ease-in-out 500ms;
+}
+
+.nav-categories a:hover {
+    color: rgb(255, 177, 210)!important;
+    background: rgb(26, 26, 26)!important;
+    transition: ease-in-out 500ms;
+}
+
+.footer-best {
+    background: rgb(26, 26, 26)!important;
+    color: rgb(255, 247, 247)!important;
+    
+}
+
+.copyright {
+    border-top: 1px solid rgb(41, 40, 40);
+    color: rgb(116, 116, 116);
+    font-size: 0.8rem;
+}
+
+
+.footer-content li {
+    font-size: 0.8rem;
+    
+}
+
+.footer-content li a,p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: rgb(116, 116, 116);
+}
+
+.footer-content li a:hover {
+    color: rgb(236, 199, 214)!important;
+}
+
+.carousel-control-next, .carousel-control-prev, .carousel-indicators  {
+    filter: invert(70%);
+}
+
+.nav-top {
+    font-size: 0.9rem;
+}
+
+.card-m {
+    width: 100%;
+    height: 350px;
+    max-width: 100%;
+    max-height: 350px;
+    position: relative;
+    background: rgb(255, 247, 247)!important;
+    transition: ease-in-out 500ms;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.13);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.card-m-header {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 70%;
+}
+
+.img-card {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    transform: scale(1.0, 1.0);
+    transition: ease-in-out 500ms;
+}
+
+.img-details {
+    display: block;
+    overflow: hidden;
+    width: 80%;
+    max-width: 80%;
+    height: 600px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.13);
+}
+
+.card-m:hover .img-card {
+    transform: scale(1.1, 1.1);
+    transition: ease-in-out 1000ms;
+    filter: brightness(40%);
+}
+
+.product-more {
+    display: none;
+    position: absolute;
+    bottom:40%;
+    width:80%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    font-weight: 100;
+    font-size: 1.2rem;
+    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    background: none;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: ease-in-out 500ms;
+}
+
+.product-more:hover {
+    color: rgb(255, 177, 210);
+    border: 1px solid rgb(255, 177, 210);
+    transition: ease-in-out 500ms;
+}
+
+.card-m:hover .product-more {
+    display: block;
+    transition: ease-in-out 500ms;
+}
+
+.card-product-name {
+    padding-bottom: 5px;
+    text-overflow: ellipsis;
+}
+
+.card-product-price {
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+
+.collection {
+    font-size: 0.7rem;
+    font-weight: 100;
+    margin:0;
+    text-transform: uppercase;
+}
+
+.collection-c {
+    font-weight: 600;
+    font-size: 0.7rem;
+    color: rgb(255, 177, 210)!important;
+    text-transform: uppercase;
+}
+
+.collection-s {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: rgb(255, 177, 210)!important;
+    text-transform: uppercase;
+}
+
+.collection-u {
+    border-bottom: 1px solid rgb(143, 143, 143);;
+}
+
+.heart {
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+    transform: scale(1, 1);
+    transition: ease-in-out 300ms;
+}
+
+.heart:hover {
+    transform: scale(1.3, 1.3);
+    color: rgb(255, 177, 210)!important;
+    transition: ease-in-out 300ms;
+    cursor: pointer;
+}
+
+.liked {
+    transform: scale(1.3, 1.3);
+    color: rgb(255, 177, 210)!important;
+    cursor: pointer;
+    transition: ease-in-out 300ms;
+}
+
+.text-sm {
+    font-size: 0.9rem;
+}
+
+.details-price {
+    font-weight: 100;
+}
+
+.colors {
+    display:flex;
+}
+
+.sizes {
+    display:flex;
+}
+
+.quantity {
+    display: flex;
+}
+
+.color-card {
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    margin-right: 5px;
+    transform: scale(1.0, 1.0);
+    transition: ease-in-out 300ms;
+    cursor: pointer;
+}
+
+.color-card:hover {
+    transform: scale(1.2, 1.2);
+    transition: ease-in-out 300ms;
+}
+
+.selected-color {
+    transform: scale(1.1, 1.1);
+    border: 1px solid #000;
+}
+
+.size-card {
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin-right: 10px;
+    transform: scale(1.0, 1.0);
+    transition: ease-in-out 300ms;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.size-text {
+    font-size: 1.1rem;
+}
+
+.size-card:hover {
+    transform: scale(1.2, 1.2);
+    transition: ease-in-out 300ms;
+}
+
+.selected-size {
+    transform: scale(1.1, 1.1);
+    background: #000;
+}
+
+.selected-size p{
+    color: #fff;
+}
+
+.plus-minus-qty {
+    display: block;
+    width: 80px;
+    height: 50px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.plus-minus-qty p {
+    font-weight: 100;
+}
+
+.plus-minus {
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid rgb(143, 143, 143);
+    cursor: pointer;
+}
+
+.badge-cart {
+    display: inline;
+    margin-left: 1px;
+    padding: 5px;
+    background: rgb(255, 177, 210)!important;
+    color: #000;
+}
+
+
+
+.plus-minus:hover {
+    border: 2px solid #000;
+}
+
+.add-cart {
+    background: rgb(255, 177, 210)!important;
+    border-radius: 0;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+}
+
+.add-cart:hover {
+    border: 1px solid #000;
+}
+
+.description {
+    font-weight: 100;
+}
