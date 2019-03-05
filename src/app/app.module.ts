@@ -7,13 +7,15 @@ import { appRoutes } from './routes';
 import { HomeComponent } from './Home/Home.component';
 import { ErrorComponent } from './Error/Error.component';
 import { NavComponent } from './Nav/Nav.component';
+import { FooterComponent } from './Footer/Footer.component';
 
 @NgModule({
    declarations: [
       AppComponent,
       HomeComponent,
       ErrorComponent,
-      NavComponent
+      NavComponent,
+      FooterComponent
    ],
    imports: [
       BrowserModule,
