@@ -1,9 +1,9 @@
-<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="col-lg-3 col-md-4 col-sm-6 d-inline-flex">
   <div class="card-m">
     <div class="card-m-header">
-      <img class="img-card" src="{{product.imageUrl}}" alt="card 1">
+      <img class="img-card" src="{{product.imageUrl}}" alt="{{product.description}}">
       <span class="heart"><i class="fa fa-heart"></i></span>
-      <button class="product-more">
+      <button class="product-more" [routerLink]="['product/details/', product.id]">
         DETAILS
       </button>
     </div>

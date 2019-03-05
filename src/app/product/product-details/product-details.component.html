@@ -1,0 +1,83 @@
+<div class="col-sm-12 mt-4 mb-4">
+    <div class="row">
+      <div class="col-sm-6 mt-3">
+        <div class="img-details">
+          <img class="img-card" src="{{product.imageUrl}}" alt="{{product.description}}">
+        </div>
+      </div>
+      <div class="col-sm-6 mt-3">
+        <h6 class="pb-1 collection-u">Collection: <span class="collection-s">{{product.collection}}</span></h6>
+        <h2>{{product.name}}</h2>
+        <h4 class="details-price mt-4 mb-4"><small>Price:</small> {{product.price}} $</h4>
+        <!--Color-->
+        <p class="mb-1"><small>Color <strong>Black</strong></small></p>
+        <div class="colors mb-3">
+          <div class="color-card selected-color">
+            <img class="img-card" src="assets/img/colors/black.jpg" alt="color">
+          </div>
+          <div class="color-card">
+            <img class="img-card" src="assets/img/colors/blue.jpg" alt="color">
+          </div>
+          <div class="color-card">
+            <img class="img-card" src="assets/img/colors/green.jpg" alt="color">
+          </div>
+          <div class="color-card">
+            <img class="img-card" src="assets/img/colors/purple.jpg" alt="color">
+          </div>
+          <div class="color-card">
+            <img class="img-card" src="assets/img/colors/red.jpg" alt="color">
+          </div>
+          <div class="color-card">
+            <img class="img-card" src="assets/img/colors/white.jpg" alt="color">
+          </div>
+        </div>
+        <!--Color END-->
+        <!--Size-->
+        <p class="mb-1"><small>Size: <strong>S</strong></small></p>
+        <div class="sizes mb-3">
+          <div class="size-card">
+            <p class="text-center m-0 p-0 size-text">XS</p>
+          </div>
+          <div class="size-card selected-size">
+            <p class="text-center m-0 p-0 size-text">S</p>
+          </div>
+          <div class="size-card">
+            <p class="text-center m-0 p-0 size-text">M</p>
+          </div>
+          <div class="size-card">
+            <p class="text-center m-0 p-0 size-text">L</p>
+          </div>
+          <div class="size-card">
+            <p class="text-center m-0 p-0 size-text">XL</p>
+          </div>
+        </div>
+        <!--Size END-->
+        <!--Quantity-->
+        <div class="quantity mt-4">
+          <div class="plus-minus">
+            <p class="text-center p-0 m-0">-</p>
+          </div>
+          <div class="plus-minus-qty">
+            <p class="text-center p-0 m-0">Qty. <strong>1</strong></p>
+          </div>
+          <div class="plus-minus">
+            <p class="text-center p-0 m-0">+</p>
+          </div>
+        </div>
+        <!--Quantity END-->
+        <div class="mt-4">
+          <button class="btn btn-default btn-lg add-cart">
+            Add to Cart
+          </button>
+        </div>
+        <hr />
+        <!--Description-->
+        <div class="description text-left mb-2">
+          <p>
+            {{product.description}}
+          </p>
+        </div>
+        <!--Description END-->
+      </div>
+    </div>
+  </div>
