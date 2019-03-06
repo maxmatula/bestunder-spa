@@ -14,9 +14,9 @@
           <a class="nav-link" href="#"><i class="fa fa-heart"></i> Lovelist</a>
         </li>
         <li class="nav-item ml-5 mr-2">
-          <a class="nav-link" href="#">
-            <i class="fa fa-shopping-bag"></i> Bag
-            <span class="badge badge-pill badge-danger badge-cart">4</span>
+          <a class="nav-link" [routerLink]="['/cart']">
+            <i class="fa fa-shopping-bag"></i> Shopping Cart
+            <span class="badge badge-pill badge-danger badge-cart">{{cartLength}}</span>
           </a>
         </li>
       </ul>

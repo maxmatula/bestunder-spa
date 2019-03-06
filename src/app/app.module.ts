@@ -16,6 +16,8 @@ import { TermsComponent } from './static-pages/Terms/Terms.component';
 import { CategoryComponent } from './home-c/category/category.component';
 import { ProductService } from 'src/_services/product.service';
 import { CartService } from 'src/_services/cart.service';
+import { CartComponent } from './cart/cart/cart.component';
+import { CartCardComponent } from './cart/cart-card/cart-card.component';
 
 @NgModule({
    declarations: [
@@ -29,7 +31,9 @@ import { CartService } from 'src/_services/cart.service';
       CookiesComponent,
       PrivacyComponent,
       TermsComponent,
-      CategoryComponent
+      CategoryComponent,
+      CartComponent,
+      CartCardComponent
    ],
    imports: [
       BrowserModule,

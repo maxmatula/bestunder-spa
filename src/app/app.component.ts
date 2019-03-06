@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges } from '@angular/core';
 import { CartService } from 'src/_services/cart.service';
 import { Router, NavigationEnd } from '@angular/router';
 
@@ -9,6 +9,7 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 
 export class AppComponent implements OnInit {
+  cartLength: number;
 
   constructor(private router: Router, private cart: CartService) { }
 

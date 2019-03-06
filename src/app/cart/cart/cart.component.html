@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="col-sm-12 mt-4 mb-4">
+    <h2 class="text-center mb-4">Your Shopping Cart</h2>
+    <div class="row">
+        <table class="table">
+            <tbody>
+              <tr *ngFor="let item of items">
+                  <app-cart-card [item]="item" (removed)="refreshItems()"></app-cart-card>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 offset-8">
+        <h5 class="total">TOTAL: <span class="total-4">{{totalPrice}} $</span></h5>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-sm-12 text-center">
+          <button class="btn btn-default btn-lg add-cart checkout">
+              CHECKOUT
+          </button>
+      </div>
+    </div>
+    <br>
+  </div>
+</div>

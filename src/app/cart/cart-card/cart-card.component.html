@@ -1,0 +1,22 @@
+<td>
+  <img class="img-table" src="{{item.product.imageUrl}}" alt="{{item.product.description}}">
+</td>
+<td style="width: 40%">
+  <h5 class="card-product-name mt-3">{{item.product.name}}</h5>
+  <p class="collection">COLLECTION:
+    <span class="collection-c">{{item.product.collection}}</span></p>
+    <br>
+  <h6 class="card-product-price">{{item.product.price}} $</h6>
+</td>
+<td style="width: 30%">
+  <div class="ml-4 mt-3 mr-4">
+      <p>Quantity: <span>{{item.quantity}}</span></p>
+      <br>
+      <p>Sum: <span>{{item.product.price * item.quantity}} $</span></p>
+  </div> 
+</td>
+<td>
+  <button class="btn btn-light btn-sm" (click)="removeItem()">
+    <i class="fa fa-trash"></i> REMOVE
+  </button>
+</td>
