@@ -1,0 +1,4 @@
+.add-cart:active {
+    transform: scale(1.6, 1.6);
+    transition: ease-in-out 100ms;
+}

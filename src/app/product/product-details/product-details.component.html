@@ -55,19 +55,19 @@
         <!--Size END-->
         <!--Quantity-->
         <div class="quantity mt-4">
-          <div class="plus-minus">
+          <div class="plus-minus" (click)="removeQuantity()">
             <p class="text-center p-0 m-0">-</p>
           </div>
           <div class="plus-minus-qty">
-            <p class="text-center p-0 m-0">Qty. <strong>1</strong></p>
+            <p class="text-center p-0 m-0">Qty. <strong>{{item.quantity}}</strong></p>
           </div>
-          <div class="plus-minus">
+          <div class="plus-minus" (click)="addQuantity()">
             <p class="text-center p-0 m-0">+</p>
           </div>
         </div>
         <!--Quantity END-->
         <div class="mt-4">
-          <button class="btn btn-default btn-lg add-cart">
+          <button class="btn btn-default btn-lg add-cart" (click)="addToCart()">
             Add to Cart
           </button>
         </div>

@@ -45,7 +45,7 @@ export class ProductService {
                 description: 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.',
                 collection: 'Hyssopleaf Sandmat',
                 price: 252.26,
-                imageUrl: 'assets/img/card/2.jpg',
+                imageUrl: 'assets/img/card/1.jpg',
                 liked: false
             },
             {

@@ -1,4 +1,4 @@
-export interface Product {
+export class Product {
     id: number;
     name: string;
     category: string;
@@ -7,4 +7,6 @@ export interface Product {
     price: number;
     imageUrl: string;
     liked: boolean;
+
 }
+

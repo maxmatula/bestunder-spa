@@ -14,6 +14,8 @@ import { CookiesComponent } from './static-pages/Cookies/Cookies.component';
 import { PrivacyComponent } from './static-pages/Privacy/Privacy.component';
 import { TermsComponent } from './static-pages/Terms/Terms.component';
 import { CategoryComponent } from './home-c/category/category.component';
+import { ProductService } from 'src/_services/product.service';
+import { CartService } from 'src/_services/cart.service';
 
 @NgModule({
    declarations: [
@@ -33,7 +35,10 @@ import { CategoryComponent } from './home-c/category/category.component';
       BrowserModule,
       RouterModule.forRoot(appRoutes)
    ],
-   providers: [],
+   providers: [
+      ProductService,
+      CartService
+   ],
    bootstrap: [
       AppComponent
    ]

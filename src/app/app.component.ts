@@ -10,7 +10,7 @@ import { Router, NavigationEnd } from '@angular/router';
 
 export class AppComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private cart: CartService) { }
 
   ngOnInit() {
     this.router.events.subscribe((evt) => {
@@ -18,6 +18,7 @@ export class AppComponent implements OnInit {
           return;
       }
       window.scrollTo(0, 0);
+      this.cart.setupCart();
   });
   }
 
