@@ -7,10 +7,16 @@ import { CookiesComponent } from './static-pages/Cookies/Cookies.component';
 import { PrivacyComponent } from './static-pages/Privacy/Privacy.component';
 import { CategoryComponent } from './home-c/category/category.component';
 import { CartComponent } from './cart/cart/cart.component';
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
 
 export const appRoutes: Routes = [
 
     {path: '', component: HomeComponent},
+    {path: 'auth', children: [
+        {path: 'login', component: LoginComponent},
+        {path: 'register', component: RegisterComponent}
+    ]},
     {path: 'terms', component: TermsComponent},
     {path: 'cookies', component: CookiesComponent},
     {path: 'privacy', component: PrivacyComponent},

@@ -1,0 +1,27 @@
+<div class="container text-center pb-5">
+  <div class="col-sm-4 offset-4" style="border: 1px solid #000">
+    <form #loginForm="ngForm" class="form-signin mb-5 p-4">
+      <img class="img-thumbnail" src="../../../assets/img/nologo.png" alt="" width="72" height="72">
+      <h2 class="font-weight-normal">BESTUNDER</h2>
+      <small class="font-weight-normal">SIGN IN</small>
+      <hr>
+      <div class="form-group">
+        <input type="email" name="email"  class="form-control"
+          placeholder="Email address" required>
+      </div>
+      <div class="form-group">
+        <input type="password" name="password"  class="form-control" 
+        placeholder="Password" required>
+      </div>
+      <div class="checkbox mb-3 mt-3">
+        <label>
+          <input type="checkbox" value="remember-me" > Remember me
+        </label>
+      </div>
+      <hr>
+      <button [disabled]='!loginForm.valid' class="btn add-cart btn-lg btn-block" type="submit">
+        Sign in
+      </button>
+    </form>
+  </div>
+</div>

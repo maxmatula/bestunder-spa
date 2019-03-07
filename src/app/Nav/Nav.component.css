@@ -1,0 +1,20 @@
+.dropdown-user {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    margin-top: 10px;
+}
+
+
+.dropdown-item:hover a {
+    color: rgb(255, 177, 210)!important;
+}
+
+.dropdown-item:hover {
+    background:#212529!important;
+}
+
+.dropdown-menu {
+    background:#212529!important;
+}

@@ -18,6 +18,9 @@ import { ProductService } from 'src/_services/product.service';
 import { CartService } from 'src/_services/cart.service';
 import { CartComponent } from './cart/cart/cart.component';
 import { CartCardComponent } from './cart/cart-card/cart-card.component';
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
    declarations: [
@@ -33,10 +36,14 @@ import { CartCardComponent } from './cart/cart-card/cart-card.component';
       TermsComponent,
       CategoryComponent,
       CartComponent,
-      CartCardComponent
+      CartCardComponent,
+      LoginComponent,
+      RegisterComponent,
    ],
    imports: [
       BrowserModule,
+      FormsModule,
+      ReactiveFormsModule,
       RouterModule.forRoot(appRoutes)
    ],
    providers: [

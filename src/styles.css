@@ -120,6 +120,10 @@ body {
     transition: ease-in-out 500ms;
 }
 
+.form-control {
+    border-radius: 0!important;
+}
+
 .img-details {
     display: block;
     overflow: hidden;
