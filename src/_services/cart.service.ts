@@ -37,9 +37,9 @@ export class CartService {
     localStorage.setItem('bestunderCart', JSON.stringify(cartNew));
   }
 
-  getCartCount(): Observable<number> {
+  getCartCount(): number {
     const cart: Item[] = JSON.parse(localStorage.getItem('bestunderCart'));
-    return of<number>(cart.length);
+    return cart.length;
   }
 
   getItems(): Observable<Item[]> {
