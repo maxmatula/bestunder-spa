@@ -17,7 +17,7 @@ export class ProductService {
                 collection: 'Musky Phlox',
                 price: 84.42,
                 imageUrl: 'assets/img/card/2.jpg',
-                liked: true
+                liked: false
             },
             {
                 id: 2,
@@ -27,7 +27,7 @@ export class ProductService {
                 collection: 'Runyons Water-willow',
                 price: 121.26,
                 imageUrl: 'assets/img/card/3.jpeg',
-                liked: true
+                liked: false
             },
             {
                 id: 3,
@@ -57,7 +57,7 @@ export class ProductService {
                 collection: 'Sachsia',
                 price: 272.26,
                 imageUrl: 'assets/img/card/6.jpeg',
-                liked: true
+                liked: false
             },
             {
                 id: 6,
@@ -67,7 +67,7 @@ export class ProductService {
                 collection: 'Cuban Nutrush',
                 price: 218.37,
                 imageUrl: 'assets/img/card/5.jpg',
-                liked: true
+                liked: false
             },
             {
                 id: 7,
@@ -87,7 +87,7 @@ export class ProductService {
                 collection: 'Currant Tomato',
                 price: 177.96,
                 imageUrl: 'assets/img/card/2.jpg',
-                liked: true
+                liked: false
             },
             {
                 id: 9,
@@ -97,7 +97,7 @@ export class ProductService {
                 collection: 'Shortleaf Lobelia',
                 price: 239.4,
                 imageUrl: 'assets/img/card/4.jpg',
-                liked: true
+                liked: false
             },
             {
                 id: 10,
@@ -106,8 +106,8 @@ export class ProductService {
                 description: 'Aenean fermentum. Donec ut mafend luctus, ultricies eu, nibh.',
                 collection: 'Suksdorfs Indian Paintbrush',
                 price: 235.49,
-                imageUrl: 'assets/img/card/3.jpeg',
-                liked: true
+                imageUrl: 'assets/img/card/7.jpg',
+                liked: false
             }
         ];
     }
