@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Product } from 'src/_models/product';
+import { Observable, of, from } from 'rxjs';
 
 @Injectable({
     providedIn: 'root'
@@ -133,5 +134,10 @@ export class ProductService {
     getProductsByCategory(category: string) {
         const prod = this.products.filter(p => p.category === category);
         return prod;
+    }
+
+    getLoveList(): Observable<Product[]> {
+        const prod = this.products.filter(p => p.liked === true);
+        return of<Product[]>(prod);
     }
 }

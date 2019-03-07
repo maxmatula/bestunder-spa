@@ -9,6 +9,7 @@ import { CategoryComponent } from './home-c/category/category.component';
 import { CartComponent } from './cart/cart/cart.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
+import { LovelistComponent } from './lovelist/lovelist.component';
 
 export const appRoutes: Routes = [
 
@@ -21,6 +22,7 @@ export const appRoutes: Routes = [
     {path: 'cookies', component: CookiesComponent},
     {path: 'privacy', component: PrivacyComponent},
     {path: 'cart', component: CartComponent},
+    {path: 'lovelist', component: LovelistComponent},
     {path: 'category/:name', component: CategoryComponent},
     {path: 'product/details/:id', component: ProductDetailsComponent},
     {path: '**', component: ErrorComponent}

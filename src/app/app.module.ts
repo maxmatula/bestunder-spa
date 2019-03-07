@@ -21,6 +21,7 @@ import { CartCardComponent } from './cart/cart-card/cart-card.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LovelistComponent } from './lovelist/lovelist.component';
 
 @NgModule({
    declarations: [
@@ -39,6 +40,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
       CartCardComponent,
       LoginComponent,
       RegisterComponent,
+      LovelistComponent
    ],
    imports: [
       BrowserModule,
