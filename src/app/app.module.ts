@@ -4,10 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './routes';
-import { HomeComponent } from './Home/Home.component';
-import { ErrorComponent } from './Error/Error.component';
-import { NavComponent } from './Nav/Nav.component';
-import { FooterComponent } from './Footer/Footer.component';
+import { NavComponent } from './nav/Nav.component';
+import { FooterComponent } from './footer/Footer.component';
 import { ProductCardComponent } from './home-c/product-card/product-card.component';
 import { ProductDetailsComponent } from './product/product-details/product-details.component';
 import { CookiesComponent } from './static-pages/Cookies/Cookies.component';
@@ -22,6 +20,8 @@ import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LovelistComponent } from './lovelist/lovelist.component';
+import { HomeComponent } from './Home/Home.component';
+import { ErrorComponent } from './Error/Error.component';
 
 @NgModule({
    declarations: [
