@@ -6,17 +6,17 @@
   <p class="collection">COLLECTION:
     <span class="collection-c">{{item.product.collection}}</span></p>
     <br>
-  <h6 class="card-product-price">{{item.product.price}} $</h6>
+  <h6 class="card-product-price">{{item.product.price | number}} $</h6>
 </td>
 <td style="width: 25%">
-  <div class="ml-4 mt-3 mr-4">
-      <p>Quantity: <span>{{item.quantity}}</span></p>
+  <div class="mt-3">
+      <p>Quantity: <strong>{{item.quantity}}</strong></p>
       <br>
-      <p>Sum: <span>{{item.product.price * item.quantity}} $</span></p>
+      <p class="card-product-price">Sum: <strong>{{item.product.price * item.quantity | number}} $</strong></p>
   </div> 
 </td>
 <td>
   <button class="btn btn-sm" (click)="removeItem()">
-    <i class="fa fa-trash"></i> REMOVE ITEM
+    <i class="fa fa-trash"></i> REMOVE
   </button>
 </td>
