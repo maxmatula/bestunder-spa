@@ -1,6 +1,6 @@
 # BestunderSPA
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+Live version: https://maxmatula.github.io/bestunder-spa/
 
 ## Development server
 
