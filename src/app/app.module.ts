@@ -22,6 +22,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LovelistComponent } from './lovelist/lovelist.component';
 import { HomeComponent } from './Home/Home.component';
 import { ErrorComponent } from './Error/Error.component';
+import { AboutComponent } from './static-pages/about/about.component';
+import { ContactComponent } from './static-pages/contact/contact.component';
+import { SaleComponent } from './home-c/sale/sale.component';
 
 @NgModule({
    declarations: [
@@ -40,7 +43,10 @@ import { ErrorComponent } from './Error/Error.component';
       CartCardComponent,
       LoginComponent,
       RegisterComponent,
-      LovelistComponent
+      LovelistComponent,
+      AboutComponent,
+      ContactComponent,
+      SaleComponent
    ],
    imports: [
       BrowserModule,

@@ -1,5 +1,8 @@
 <div class="col-lg-3 col-md-4 col-sm-6 d-inline-flex">
   <div class="card-m">
+    <div *ngIf="product.sale" class="sale">
+      <img src="../../../assets/img/sale.png" alt="sale" class="ribbon">
+    </div>
     <div class="card-m-header">
       <img class="img-card" src="{{product.imageUrl}}" alt="{{product.description}}">
       <span class="heart" [ngClass]="{'liked': product.liked}">

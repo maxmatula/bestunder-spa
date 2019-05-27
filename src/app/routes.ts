@@ -10,6 +10,9 @@ import { CartComponent } from './cart/cart/cart.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { LovelistComponent } from './lovelist/lovelist.component';
+import { AboutComponent } from './static-pages/about/about.component';
+import { ContactComponent } from './static-pages/contact/contact.component';
+import { SaleComponent } from './home-c/sale/sale.component';
 
 export const appRoutes: Routes = [
 
@@ -22,7 +25,10 @@ export const appRoutes: Routes = [
     {path: 'terms', component: TermsComponent},
     {path: 'cookies', component: CookiesComponent},
     {path: 'privacy', component: PrivacyComponent},
+    {path: 'about', component: AboutComponent},
+    {path: 'contact', component: ContactComponent},
     {path: 'cart', component: CartComponent},
+    {path: 'sale', component: SaleComponent},
     {path: 'lovelist', component: LovelistComponent},
     {path: 'category/:name', component: CategoryComponent},
     {path: 'product/details/:id', component: ProductDetailsComponent},

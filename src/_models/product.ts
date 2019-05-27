@@ -7,6 +7,6 @@ export class Product {
     price: number;
     imageUrl: string;
     liked: boolean;
-
+    sale: boolean;
 }
 
