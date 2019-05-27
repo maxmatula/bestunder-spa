@@ -13,6 +13,7 @@ import { LovelistComponent } from './lovelist/lovelist.component';
 import { AboutComponent } from './static-pages/about/about.component';
 import { ContactComponent } from './static-pages/contact/contact.component';
 import { SaleComponent } from './home-c/sale/sale.component';
+import { CheckoutComponent } from './cart/checkout/checkout.component';
 
 export const appRoutes: Routes = [
 
@@ -28,6 +29,7 @@ export const appRoutes: Routes = [
     {path: 'about', component: AboutComponent},
     {path: 'contact', component: ContactComponent},
     {path: 'cart', component: CartComponent},
+    {path: 'checkout', component: CheckoutComponent},
     {path: 'sale', component: SaleComponent},
     {path: 'lovelist', component: LovelistComponent},
     {path: 'category/:name', component: CategoryComponent},
